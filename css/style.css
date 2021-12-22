@@ -1,0 +1,328 @@
+.setting{
+    width: 40px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    position: fixed;
+    top: 20%;
+    z-index: 999;
+    border-top-right-radius:3px ;
+    border-bottom-right-radius: 3px;
+}
+.setting a{
+    color: #fff;
+}
+.navbar{
+    background-color: rgba(184, 160, 126, 0.5);
+    border-bottom: 1px solid #f1f1f1;
+}
+.links a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+.links a:hover{
+    color: #f25454;
+}
+.box a{
+    color:  #f25454;
+}
+@media screen and (max-width:800px){
+    .links{
+        width: 100% !important;
+        background-color: rgba(184, 160, 126, 1);
+    }
+    .links ul{
+        flex-direction: row;
+    }
+    nav{
+        flex-direction: column;
+    } }
+    @media screen and (max-width:500px){
+    .links .icons{
+        flex-direction: column;
+    }
+}
+/* header */
+.slide{position: relative;}
+.slider-show{position: relative;}
+ .carousal-item{
+     position: relative;
+    transition: transform 1s;
+    }
+ .carousal-content{
+        position: absolute;
+        top: 35%;
+        width: 30%;
+ }
+.carousal-content h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+.slide .slide-control-one a , .slide-control-two a{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 0;
+}
+.slide .slide-control-one .carousel-control-prev{
+    position: absolute;
+    left: 0;
+    top: 36%;
+}
+.slide-control-two .carousel-control-next{
+    position: absolute;
+    left: 0;
+    top: 43%;
+}
+.scroll{
+    width: 30px;
+    height: 45px;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 30%;
+    z-index: 444;
+    overflow: hidden;
+}
+.scroll::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+   background-color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 45%;
+    transform: translateX(-50%);
+    animation: movescroll 1s infinite;
+}
+@keyframes movescroll{
+    0%{transform: translateY(45%);}
+    30%{transform: translateY(90%);}
+    50%{transform: translateY(180%);}
+    80%{transform: translateY(-90%);}
+    100%{transform: translateY(-180%);}
+}
+/* section 2 */
+.center{position: relative;}
+.center h2{
+    position: absolute;
+     top: 10px;
+     font-size: 50px;
+     font-weight: 700;
+}
+.center h2::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    top: 120%;
+    left: 38%;
+    background-color: black;
+    transition: transform 1s;
+}
+.center h2::after:hover{
+    transform: scale(1.1);
+}
+.show h4{
+    font-size: 70px;
+        color: #f1f1f1; 
+}
+.definition p{
+    font-size: 20px;
+}
+.item-one p{
+    line-height: 1.5;
+}
+.item-two h5{
+    position: relative;
+    font-size: 17px;
+    color: #333;
+}
+.item-two h5 span {
+    position: absolute;
+    right: 80px;
+}
+.item-two h5 .two{
+    position: absolute;
+    right: 20px;
+}
+.item-two h5 .three{
+    position: absolute;
+    right: 70px;
+}
+.item-two h5 .four{
+    position: absolute;
+    right: 140px;
+}
+.progress{
+     height: 6px;
+
+}
+.progress .progress-bar{background-color: #f25454;}
+/* section 3 */
+.team{overflow: hidden;}
+.team-one{
+    position: relative;
+      overflow: hidden;
+}
+.team img{transition: transform .5s;}
+.team-one .layer{
+       width: 100%;
+       height: 100%;
+       background-color: rgba(255, 0, 0, 0.7);
+       position: absolute;
+       top: 0;
+       left: 0;
+       opacity: 0;
+}
+.team:hover .layer{opacity: 1;}
+
+.team:hover h5{color: #f25454;}
+.team:hover img{transform: scale(1.1);}
+.question button{
+    border: 0;
+    background-color: #f25454;
+}
+.question button a{
+    text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+}
+.question button:hover{
+   background-color: rgba(255, 0, 0, 0.5);
+}
+.question h5{
+    font-size: 35px;
+    font-weight: 400;
+}
+@media screen and (max-width:600px){
+    .team-one img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:760px){
+    .team-one .layer{
+        width: 100%;
+    }
+}
+/* section 4 */
+.service-item:hover h4{color: #f25454;}
+.service-icon i{
+    font-size: 30px;
+    color: #f25454;
+}
+/* section 5 */
+.carousel-indicators li{
+    width: 100%;
+}
+.carousel-indicators li img{
+    width: 50%;
+}
+.slider-show .client-content h3{
+    color: #333;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.client-content p{
+    color: #6c757d;
+    font-size: 18px;
+}
+.client-content p i{
+    font-size: 20px;
+}
+.carousel-caption span{
+    color: #6c757d;
+    font-size: 12px;
+}
+@media screen and (max-width:763px){
+    .carousel-caption{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+}
+/* section 6 */
+.contact-icons{
+    border-bottom: 1px solid #eee;
+}
+.contact-icons i{
+    font-size: 35px;
+    color: #f25454;
+}
+.contact-icons:hover h4{
+    color: #f25454;
+}
+.contact-icons .email a:hover{
+        color: #f25454;
+}
+.contact-icons .email a{
+    text-decoration: none;
+    color: #333;
+}
+.btn{
+    border: 0;
+    background-color: #f25454;
+}
+.btn i , .btn a{font-size: 18px;}
+.btn a{text-decoration: none;  font-weight: 500;}
+.btn:hover{background-color: rgba(255, 0, 0, 0.5);}
+
+/* section 7 */
+.infor h4{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.infor-icon a{
+    color: #6c757d;
+    text-decoration: none;
+}
+ .infor-icon a:hover{
+    color: #f25454;
+}
+.description{
+    background-image: url(../images/dotted-map.png);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.description .btn1{
+    background-color: transparent;
+    border: 2px solid #b0b0b0;
+    margin: 5px 0;
+}
+.description .btn1 a{
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #b0b0b0;
+    
+}
+.description .btn1:hover{border: 2px solid #f25454;}
+.description .btn1 a:hover{color: #f25454;}
+.description .arrow{
+    width: 50px;
+    height: 50px;
+   background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    top: -28px;
+}
+.description .arrow:hover{background-color: rgba(255, 0, 0, 0.7);}
+.description .arrow i{
+    font-size: 30px;
+     color: #fff;
+}
+.arrow-icon{
+    position: relative;
+}
+/* footer */
+.footer{ background-color: rgba(0, 0, 0, 1)}
+.footer-icon i{color: #fff;}
+.footer-icon i:hover{color: #f25454;}
+.footer-copy span{font-weight: bold;}
+.footer-copy a{
+    text-decoration: none;
+     color: #fff;
+}
+.footer-copy a:hover{color: #f25454;}
